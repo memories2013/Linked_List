@@ -4,7 +4,7 @@ public class SingleLinkedList {
 	Node head;
 	
 	public void insertFirst(int data) {
-		Node node = new Node();
+		Node node = new Node(data);
 		node.setData(data);
 		node.setNext(head);
 		head = node;
@@ -16,9 +16,20 @@ public class SingleLinkedList {
 		while(currentNode.next != null) {
 			currentNode = currentNode.next;
 		}
-		Node node = new Node();
+		Node node = new Node(data);
 		node.setData(data);
 		currentNode.setNext(node);	
+	}
+	
+	public void insertInBetween(int before,int data) {
+		Node currentNode = head;
+	
+		while(currentNode.data != before) {
+			currentNode = currentNode.next;
+		}
+		Node node = new Node(data);
+		node.next = currentNode.next;
+		currentNode.next = node;	
 	}
 	
 	public void printNodeElement() {
