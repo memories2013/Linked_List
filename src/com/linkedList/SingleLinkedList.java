@@ -38,6 +38,16 @@ public class SingleLinkedList {
 		return currentNode;
 	}
 	
+	public void deleteLast() {
+		Node currentNode = head;
+		Node secondLast = null;
+		while(currentNode.next != null) {
+			secondLast = currentNode;
+			currentNode = currentNode.next;
+		}
+		secondLast.next = null;
+	}
+	
 	public void printNodeElement() {
 		Node currentNode = head;
 		System.out.println("------Linked List Element------");
