@@ -9,5 +9,7 @@ public class LinkedList {
 		sll.insertInBetween(56,30);
 		sll.printNodeElement();
 		sll.findNode(30);
+		sll.insertInBetween(30, 40);
+		sll.printNodeElement();
 	}
 }
