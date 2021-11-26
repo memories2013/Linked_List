@@ -6,9 +6,9 @@ public class LinkedList {
 		
 		sll.insertFirst(56);
 		sll.insertLast(70);
-		sll.printNodeElement();
-		
 		sll.insertInBetween(56,30);
+		sll.printNodeElement();
+		sll.deleteFirst();
 		sll.printNodeElement();
 	}
 }

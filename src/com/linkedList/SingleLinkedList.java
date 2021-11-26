@@ -32,6 +32,12 @@ public class SingleLinkedList {
 		currentNode.next = node;	
 	}
 	
+	public Node deleteFirst() {
+		Node currentNode = head;
+		head = head.next;
+		return currentNode;
+	}
+	
 	public void printNodeElement() {
 		Node currentNode = head;
 		System.out.println("------Linked List Element------");
