@@ -8,7 +8,6 @@ public class LinkedList {
 		sll.insertLast(70);
 		sll.insertInBetween(56,30);
 		sll.printNodeElement();
-		sll.deleteLast();
-		sll.printNodeElement();
+		sll.findNode(30);
 	}
 }
