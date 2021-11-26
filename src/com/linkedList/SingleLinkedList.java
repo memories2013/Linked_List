@@ -10,6 +10,17 @@ public class SingleLinkedList {
 		head = node;
 	}
 	
+	public void insertLast(int data) {
+		Node currentNode = head;
+	
+		while(currentNode.next != null) {
+			currentNode = currentNode.next;
+		}
+		Node node = new Node();
+		node.setData(data);
+		currentNode.setNext(node);	
+	}
+	
 	public void printNodeElement() {
 		Node currentNode = head;
 		System.out.println("------Linked List Element------");
